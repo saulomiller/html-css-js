@@ -1,2 +1,2 @@
 # html-css-js
- aprendendo html css e  js
+ aprendendo html, css e  js
