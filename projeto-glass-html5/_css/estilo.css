@@ -1,14 +1,45 @@
 @charset "UTF-8";
 
-body{
-    p {
-        text-align:justify;
-        text-indent: 50px;
-    }   
-body{
-    background-color: aliceblue;
-    color: black;
+body {
+    background-color: #dddddd;
+    color: rgba(0,0,0,.9);
 }
+div#interface {
+    width: auto;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: auto auto 10px black;
+    padding: 10px;
+
+}
+header#cabecalho img#icone{
+    position: absolute;
+    left: 800px;
+    top: 70px;
+
+}
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
+}
+header#cabecalho h1 {
+    font-family:  Arial,sans-serif;
+    font-size: 30px;
+    color: #606060;
+    text-shadow: 1px 1px 1px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+header#cabecalho h2 {
+    font-family:  Arial,sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    margin-top: 0px;
+}
+p {
+    text-align: justify;
+    text-indent: 50px;
 }
 
 /* formatacao de imag com leg */
@@ -16,7 +47,7 @@ body{
 figure.foto-leg{
     position: relative;
     border: 8px solid transparent;
-    box-shadow: 1px 1px 4px black;
+    box-shadow: 1px 1px 4px rgb(0, 0, 0);
 
 }
 
@@ -41,4 +72,46 @@ figure.foto-leg figcaption{
 
 figure.foto-leg:hover figcaption {
      opacity: 1;
+}
+nav#menu {
+    display: relative ; /* para conter elementos absolutos dentro do nav */
+}
+
+/* formatacao menu */
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -10px;
+    left: 300px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: 000000;
+    text-decoration:none;
+
+}
+nav#menu a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
