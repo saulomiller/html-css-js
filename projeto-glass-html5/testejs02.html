@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Teste JavaScript</title>
+    <meta charset="UTF-8">
+    <script>
+        function on() {
+            document.getElementById("lux").src = "_imagens/lampada-acesa.jpg"
+            
+        }
+
+        function off() {
+            document.getElementById("lux").src = "_imagens/lampada-apagada.jpg"
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <h1>Acenda a Lampada</h1>
+    <img src="_imagens/lampada-apagada.jpg" id="lux"  onmousemove="on()" onmouseout="off()"   />
+
+</body>
+
+</html>
