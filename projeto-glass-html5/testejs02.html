@@ -7,12 +7,17 @@
     <meta charset="UTF-8">
     <script>
         function on() {
-            document.getElementById("lux").src = "_imagens/lampada-acesa.jpg"
+            document.getElementById("lux").src = "_imagens/lampada-acesa.jpg";
             
         }
 
         function off() {
-            document.getElementById("lux").src = "_imagens/lampada-apagada.jpg"
+            document.getElementById("lux").src = "_imagens/lampada-apagada.jpg";
+        }
+
+        function quebraLux () {
+            document.getElementById("lux").src = "_imagens/lampada-quebrada.jpg";
+        
         }
 
 
@@ -22,7 +27,7 @@
 
 <body>
     <h1>Acenda a Lampada</h1>
-    <img src="_imagens/lampada-apagada.jpg" id="lux"  onmousemove="on()" onmouseout="off()"   />
+    <img src="_imagens/lampada-apagada.jpg" id="lux"  onmousemove="on()" onmouseout="off()" onclick="quebraLux()"   />
 
 </body>
 
