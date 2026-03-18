@@ -1,2 +1,2 @@
 # html-css-js
- aprendendo html, css e  js
+ Exercícios e projetos de estudo — HTML, CSS e JavaScript
